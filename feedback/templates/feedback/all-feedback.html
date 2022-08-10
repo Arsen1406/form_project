@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Все отзывы
+{% endblock %}
+
+
+{% block content %}
+<h2> Все отзывы </h2>
+<ol>
+{% for feed in feedback %}
+<li><a href=""> {{ feed.name }} {{ feed.surname }}: {{ feed.rating }}</a></li>
+
+{% endfor %}
+</ol>
+{% endblock %}
+
